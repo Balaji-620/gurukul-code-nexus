@@ -18,9 +18,8 @@ const Navigation = () => {
       ]
     },
     { title: 'Pricing', href: '/pricing' },
-    { title: 'Enterprise', href: '/enterprise' },
-    { title: 'About', href: '#about' },
-    { title: 'Contact', href: '#contact' },
+    { title: 'Enterprise Solutions', href: '/enterprise' },
+    { title: 'About', href: '/about' },
   ];
 
   return (
@@ -88,7 +87,7 @@ const Navigation = () => {
             <Button variant="outline" className="font-montserrat border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white">
               Sign In
             </Button>
-            <Button className="bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-brand-blue hover:to-brand-cyan font-montserrat text-white">
+            <Button className="bg-brand-blue hover:bg-brand-cyan font-montserrat text-white">
               Start My Journey
             </Button>
           </div>
@@ -136,7 +135,7 @@ const Navigation = () => {
                   <Button variant="outline" className="w-full font-montserrat border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white">
                     Sign In
                   </Button>
-                  <Button className="w-full bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-brand-blue hover:to-brand-cyan font-montserrat text-white">
+                  <Button className="w-full bg-brand-blue hover:bg-brand-cyan font-montserrat text-white">
                     Start My Journey
                   </Button>
                 </div>
