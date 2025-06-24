@@ -3,54 +3,66 @@ import React from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
-import { Sparkles, Users, Target, Shield, ArrowRight, CheckCircle } from 'lucide-react';
+import { Sparkles, Users, Target, Shield, ArrowRight, CheckCircle, Brain, Heart, Globe, Zap } from 'lucide-react';
 
 const About = () => {
-  const values = [
+  const coreValues = [
     {
-      icon: <Target className="h-8 w-8" />,
-      title: "Purpose-Driven Growth",
-      description: "We believe career development should align with personal values and contribute to meaningful impact in the world."
+      icon: <Heart className="h-8 w-8" />,
+      title: "Human-Centric AI",
+      description: "Technology should amplify human potential, not replace it. Our AI systems are designed to empower, guide, and inspire individual growth."
     },
     {
       icon: <Shield className="h-8 w-8" />,
-      title: "Ethical AI",
-      description: "Our AI systems are built with transparency, fairness, and human agency at their core."
+      title: "Ethical Intelligence",
+      description: "We build AI with transparency, fairness, and accountability at its core, ensuring every recommendation serves the individual's best interests."
     },
     {
-      icon: <Users className="h-8 w-8" />,
-      title: "Community-Centered",
-      description: "Learning and growth happen best in supportive communities where knowledge and experiences are shared."
+      icon: <Globe className="h-8 w-8" />,
+      title: "Inclusive Growth",
+      description: "Career success shouldn't depend on privilege or access. We democratize opportunity through intelligent, accessible career guidance."
     },
     {
-      icon: <Sparkles className="h-8 w-8" />,
-      title: "Continuous Innovation",
-      description: "We stay at the forefront of AI and educational technology to provide the most effective learning experiences."
+      icon: <Zap className="h-8 w-8" />,
+      title: "Continuous Evolution",
+      description: "In a rapidly changing world, we stay ahead of industry shifts to provide the most relevant and forward-thinking career intelligence."
     }
   ];
 
-  const stats = [
-    { number: "50K+", label: "Learners Empowered" },
-    { number: "500+", label: "Partner Organizations" },
-    { number: "95%", label: "Career Advancement Rate" },
-    { number: "24/7", label: "AI Assistant Availability" }
+  const impactStats = [
+    { number: "100K+", label: "Lives Transformed" },
+    { number: "1000+", label: "Partner Organizations" },
+    { number: "98%", label: "Career Success Rate" },
+    { number: "50+", label: "Countries Reached" }
   ];
 
-  const team = [
+  const founderStory = [
+    "Born from the realization that traditional career counseling couldn't keep pace with the AI revolution",
+    "Founded by technologists who experienced firsthand the gap between education and industry reality",
+    "Built on the principle that every individual deserves personalized, intelligent career guidance",
+    "Committed to creating technology that serves humanity's highest potential"
+  ];
+
+  const ourApproach = [
     {
-      name: "Dr. Sarah Chen",
-      role: "CEO & Co-founder",
-      bio: "Former Head of AI at Microsoft, PhD in Computer Science from Stanford"
+      step: "01",
+      title: "Deep Understanding",
+      description: "We start by truly understanding you - your strengths, values, aspirations, and unique circumstances."
     },
     {
-      name: "Marcus Rodriguez",
-      role: "CTO & Co-founder",
-      bio: "Ex-Google Senior Engineer, specializing in large-scale AI systems"
+      step: "02", 
+      title: "Intelligent Matching",
+      description: "Our AI analyzes thousands of career paths to find opportunities perfectly aligned with your profile."
     },
     {
-      name: "Dr. Priya Patel",
-      role: "Head of Learning Sciences",
-      bio: "Educational psychologist with 15+ years in adaptive learning systems"
+      step: "03",
+      title: "Personalized Roadmap",
+      description: "Receive a custom career plan with specific skills, experiences, and connections you need to succeed."
+    },
+    {
+      step: "04",
+      title: "Continuous Support",
+      description: "As you grow and the world evolves, our AI adapts your plan to keep you on the path to fulfillment."
     }
   ];
 
@@ -61,21 +73,21 @@ const About = () => {
       {/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-hero relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,rgba(86,199,223,0.1),transparent_50%)]"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,rgba(245,126,32,0.1),transparent_50%)]"></div>
           <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_70%,rgba(3,109,155,0.1),transparent_50%)]"></div>
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-montserrat font-bold text-white mb-6 animate-fade-in">
-              Reimagining <span className="gradient-text">Work, Learning & Purpose</span>
+              Pioneering the <span className="gradient-text">Future of Work</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in" style={{ animationDelay: '200ms' }}>
-              We're building the future of AI-powered career intelligence to help every individual thrive in the evolving world of work
+              Where artificial intelligence meets human ambition to unlock extraordinary career possibilities
             </p>
             <div className="animate-fade-in" style={{ animationDelay: '400ms' }}>
-              <Button className="bg-brand-blue hover:bg-brand-cyan text-white px-8 py-3 font-montserrat font-medium hover-scale">
-                Join Our Mission
+              <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white px-8 py-3 font-montserrat font-medium hover-scale">
+                Discover Our Story
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
@@ -83,72 +95,91 @@ const About = () => {
         </div>
       </section>
 
-      {/* Mission Section */}
+      {/* Mission & Vision Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-12 items-start">
               <div>
-                <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-brand-dark mb-6">
-                  Our Mission
-                </h2>
-                <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                  Gurukul Code exists to democratize access to intelligent career guidance and domain expertise. We believe that every learner, professional, and institution deserves context-aware, adaptable, and continuously intelligent systems to grow meaningfully, ethically, and sustainably.
-                </p>
-                <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                  Our platform combines the wisdom of traditional mentorship (the "Gurukul" model) with cutting-edge AI technology to create personalized learning experiences that adapt to each individual's unique journey.
-                </p>
-                <div className="space-y-4">
-                  {['Personalized career intelligence', 'Ethical AI-powered guidance', 'Community-driven learning', 'Sustainable professional growth'].map((item, index) => (
-                    <div key={index} className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-brand-cyan mr-3 flex-shrink-0" />
-                      <span className="text-gray-700">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className="relative">
-                <div className="bg-gradient-to-br from-brand-blue/10 to-brand-cyan/10 rounded-2xl p-8 backdrop-blur-sm">
-                  <div className="grid grid-cols-2 gap-6">
-                    {stats.map((stat, index) => (
-                      <div key={index} className="text-center">
-                        <div className="text-2xl md:text-3xl font-montserrat font-bold text-brand-blue mb-2">
-                          {stat.number}
-                        </div>
-                        <div className="text-sm text-gray-600">{stat.label}</div>
-                      </div>
-                    ))}
+                <div className="flex items-center mb-6">
+                  <div className="p-3 bg-brand-orange text-white rounded-lg mr-4">
+                    <Target className="h-6 w-6" />
                   </div>
+                  <h2 className="text-3xl font-montserrat font-bold text-brand-dark">Our Mission</h2>
                 </div>
+                <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                  To democratize access to intelligent career guidance that adapts to each individual's unique journey. We believe every person deserves the opportunity to discover, develop, and deploy their talents in ways that create both personal fulfillment and positive impact.
+                </p>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Through the power of ethical AI, we're building a world where career decisions are informed by deep self-knowledge, market intelligence, and continuous learning.
+                </p>
+              </div>
+              <div>
+                <div className="flex items-center mb-6">
+                  <div className="p-3 bg-brand-cyan text-white rounded-lg mr-4">
+                    <Brain className="h-6 w-6" />
+                  </div>
+                  <h2 className="text-3xl font-montserrat font-bold text-brand-dark">Our Vision</h2>
+                </div>
+                <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                  A future where every individual has access to personalized, intelligent career guidance that evolves with them throughout their professional journey. Where career success is defined not just by traditional metrics, but by alignment with personal values and contribution to society.
+                </p>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  We envision a world where AI amplifies human potential, making career fulfillment accessible to everyone, regardless of background or circumstance.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Values Section */}
-      <section className="py-20 bg-gray-50">
+      {/* Impact Stats */}
+      <section className="py-16 bg-gradient-to-r from-brand-orange/10 via-brand-cyan/10 to-brand-blue/10">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-montserrat font-bold text-brand-dark mb-4">Our Global Impact</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">Transforming careers and lives across the globe through intelligent career guidance</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {impactStats.map((stat, index) => (
+              <div 
+                key={stat.label}
+                className="text-center animate-fade-in"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="text-4xl md:text-5xl font-montserrat font-bold text-brand-orange mb-2">
+                  {stat.number}
+                </div>
+                <div className="text-gray-600 font-medium">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Core Values */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-brand-dark mb-6">
-              Our Core Values
+              What Drives Us Forward
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              These principles guide everything we do, from product development to community building
+              Our core values shape every decision, every feature, and every interaction within our platform
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => (
+            {coreValues.map((value, index) => (
               <div 
                 key={value.title}
-                className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover-scale animate-fade-in"
+                className="text-center p-6 rounded-xl bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-all duration-300 hover-scale animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="inline-flex p-3 rounded-lg bg-gradient-to-r from-brand-cyan to-brand-blue text-white mb-4">
+                <div className="inline-flex p-4 rounded-lg bg-gradient-to-r from-brand-orange to-brand-cyan text-white mb-6">
                   {value.icon}
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-brand-dark mb-3">
+                <h3 className="text-xl font-montserrat font-semibold text-brand-dark mb-4">
                   {value.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -160,35 +191,85 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-20 bg-white">
+      {/* Our Approach */}
+      <section className="py-20 bg-gradient-to-br from-brand-blue/5 to-brand-cyan/5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-brand-dark mb-6">
-              Leadership Team
+              How We Transform Careers
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Meet the visionaries building the future of AI-powered career intelligence
+              Our systematic approach combines deep personalization with intelligent automation
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {team.map((member, index) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {ourApproach.map((step, index) => (
               <div 
-                key={member.name}
-                className="text-center bg-gray-50 p-6 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300 animate-fade-in"
+                key={step.step}
+                className="text-center animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="w-24 h-24 bg-gradient-to-r from-brand-cyan to-brand-blue rounded-full mx-auto mb-4 flex items-center justify-center text-white font-montserrat font-bold text-2xl">
-                  {member.name.split(' ').map(n => n[0]).join('')}
+                <div className="relative mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-r from-brand-orange to-brand-cyan text-white rounded-full flex items-center justify-center font-montserrat font-bold text-xl mx-auto">
+                    {step.step}
+                  </div>
+                  {index < ourApproach.length - 1 && (
+                    <div className="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-brand-orange to-brand-cyan"></div>
+                  )}
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-brand-dark mb-2">
-                  {member.name}
+                <h3 className="text-xl font-montserrat font-semibold text-brand-dark mb-4">
+                  {step.title}
                 </h3>
-                <p className="text-brand-blue font-medium mb-3">{member.role}</p>
-                <p className="text-gray-600 text-sm leading-relaxed">{member.bio}</p>
+                <p className="text-gray-600">
+                  {step.description}
+                </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Founder Story */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-brand-dark mb-8">
+                  Why We Started Gurukul Code
+                </h2>
+                <div className="space-y-6">
+                  {founderStory.map((story, index) => (
+                    <div 
+                      key={index}
+                      className="flex items-start space-x-4 animate-fade-in"
+                      style={{ animationDelay: `${index * 100}ms` }}
+                    >
+                      <CheckCircle className="h-6 w-6 text-brand-orange flex-shrink-0 mt-1" />
+                      <p className="text-gray-700 text-lg leading-relaxed">{story}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              
+              <div className="bg-gradient-to-br from-brand-orange/10 to-brand-cyan/10 p-8 rounded-2xl">
+                <h3 className="text-2xl font-montserrat font-bold text-brand-dark mb-6">
+                  Join Our Movement
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Be part of the AI-powered career revolution. Whether you're starting your journey or ready to make a change, we're here to guide you toward your most fulfilling path.
+                </p>
+                <div className="space-y-4">
+                  <Button className="bg-gradient-to-r from-brand-orange to-brand-cyan text-white font-montserrat font-medium px-6 py-3 hover-scale w-full">
+                    Start Your Journey
+                  </Button>
+                  <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white font-montserrat font-medium px-6 py-3 w-full">
+                    Partner With Us
+                  </Button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -198,17 +279,17 @@ const About = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-6">
-              Ready to Shape the Future of Work?
+              Ready to Shape Your Future?
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Join us in creating an AI-powered ecosystem where everyone can thrive, grow, and make meaningful impact
+              Join thousands who've discovered their path through intelligent career guidance. Your extraordinary career starts here.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-white text-brand-blue hover:bg-gray-100 font-montserrat font-medium px-8 py-3 hover-scale">
-                Start Your Journey
+              <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-montserrat font-medium px-8 py-3 hover-scale">
+                Begin Assessment
               </Button>
               <Button variant="outline" className="border-white text-white hover:bg-white/10 font-montserrat font-medium px-8 py-3">
-                Partner With Us
+                Schedule Consultation
               </Button>
             </div>
           </div>

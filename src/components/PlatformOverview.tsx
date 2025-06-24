@@ -15,19 +15,19 @@ const PlatformOverview = () => {
     },
     {
       title: "FinCode",
-      subtitle: "Financial Intelligence Platform",
-      description: "Master financial concepts and coding skills with AI-driven learning paths tailored for finance professionals.",
+      subtitle: "Finance Intelligence Platform",
+      description: "Complete finance ecosystem with AI agents, education, and automation for professionals and institutions.",
       icon: <BookOpen className="h-8 w-8" />,
       href: "/fincode",
-      features: ["Financial Modeling", "Risk Analytics", "Trading Algorithms", "RegTech Solutions"]
+      features: ["AI Agent Suite", "EdTech Programs", "CFO-as-a-Service", "Robo-Advisory Engine"]
     },
     {
       title: "Let's Advance",
-      subtitle: "Professional Growth Network",
-      description: "Connect, collaborate, and advance your career through our intelligent professional networking ecosystem.",
+      subtitle: "Content Creation & Community Network",
+      description: "Raw, relatable content and collaborative programs that bridge career confusion with career clarity.",
       icon: <Briefcase className="h-8 w-8" />,
       href: "/lets-advance",
-      features: ["Smart Networking", "Career Opportunities", "Skill Validation", "Industry Insights"]
+      features: ["Multi-Format Content", "Community Programs", "Career Truth Stories", "Innovation Labs"]
     }
   ];
 
@@ -42,7 +42,7 @@ const PlatformOverview = () => {
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Three interconnected platforms designed to accelerate your professional journey through intelligent, personalized experiences
           </p>
-          <div className="inline-flex items-center px-6 py-3 bg-gray-100 rounded-full text-brand-dark font-medium">
+          <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-brand-orange/10 to-brand-cyan/10 rounded-full text-brand-dark font-medium">
             🚀 Purpose-driven growth powered by ethical AI
           </div>
         </div>
@@ -56,7 +56,7 @@ const PlatformOverview = () => {
               style={{ animationDelay: `${index * 200}ms` }}
             >
               {/* Icon */}
-              <div className="inline-flex p-4 rounded-xl bg-brand-blue text-white mb-6 group-hover:bg-brand-cyan transition-colors">
+              <div className="inline-flex p-4 rounded-xl bg-gradient-to-r from-brand-orange to-brand-cyan text-white mb-6 group-hover:scale-110 transition-transform">
                 {platform.icon}
               </div>
 
@@ -75,7 +75,7 @@ const PlatformOverview = () => {
               <div className="space-y-2 mb-8">
                 {platform.features.map((feature, idx) => (
                   <div key={idx} className="flex items-center text-sm text-gray-500">
-                    <div className="w-1.5 h-1.5 bg-brand-cyan rounded-full mr-3"></div>
+                    <div className="w-1.5 h-1.5 bg-brand-orange rounded-full mr-3"></div>
                     {feature}
                   </div>
                 ))}
@@ -84,7 +84,7 @@ const PlatformOverview = () => {
               {/* CTA */}
               <a 
                 href={platform.href}
-                className="inline-flex items-center text-brand-blue font-semibold hover:text-brand-cyan transition-colors group"
+                className="inline-flex items-center text-brand-orange font-semibold hover:text-brand-cyan transition-colors group"
               >
                 Explore Platform
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -94,7 +94,7 @@ const PlatformOverview = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center bg-gradient-to-r from-gray-50 to-gray-100 rounded-2xl p-12">
+        <div className="text-center bg-gradient-to-r from-brand-orange/10 via-brand-cyan/10 to-brand-blue/10 rounded-2xl p-12">
           <h3 className="text-2xl md:text-3xl font-montserrat font-bold text-brand-dark mb-4">
             Ready to Transform Your Career?
           </h3>
@@ -102,7 +102,7 @@ const PlatformOverview = () => {
             Start your AI-powered journey today and discover personalized pathways to professional success
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-brand-blue hover:bg-brand-cyan text-white font-montserrat font-medium px-8 py-3 hover-scale">
+            <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-montserrat font-medium px-8 py-3 hover-scale">
               Begin Your Assessment
             </Button>
             <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white font-montserrat font-medium px-8 py-3">
