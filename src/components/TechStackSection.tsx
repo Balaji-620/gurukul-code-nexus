@@ -98,7 +98,7 @@ const TechStackSection = () => {
             <div className="text-gray-300">Uptime Guarantee</div>
           </div>
           <div className="text-white">
-            <div className="text-3xl font-bold font-montserrat mb-2">< 200ms</div>
+            <div className="text-3xl font-bold font-montserrat mb-2">&lt; 200ms</div>
             <div className="text-gray-300">Average Response Time</div>
           </div>
           <div className="text-white">
