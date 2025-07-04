@@ -8,37 +8,37 @@ const TechStackSection = () => {
       layer: "LLM Foundation",
       stack: "Self-hosted GPT-4-class models",
       icon: <Cpu className="h-6 w-6" />,
-      color: "from-brand-blue to-brand-cyan"
+      color: "from-blue-500 to-cyan-400"
     },
     {
       layer: "AI Agent System",
       stack: "LangChain, LangGraph",
       icon: <Server className="h-6 w-6" />,
-      color: "from-brand-cyan to-brand-blue"
+      color: "from-green-500 to-emerald-400"
     },
     {
       layer: "RAG Engine",
       stack: "Pinecone + memory stores",
       icon: <Database className="h-6 w-6" />,
-      color: "from-brand-blue to-brand-orange"
+      color: "from-purple-500 to-pink-400"
     },
     {
       layer: "UI/Delivery",
       stack: "React-based apps, chatbot UIs",
       icon: <Monitor className="h-6 w-6" />,
-      color: "from-brand-orange to-brand-cyan"
+      color: "from-orange-500 to-red-400"
     },
     {
       layer: "Monitoring",
       stack: "LangSmith, Grafana, Slack",
       icon: <BarChart3 className="h-6 w-6" />,
-      color: "from-brand-cyan to-brand-orange"
+      color: "from-teal-500 to-cyan-400"
     },
     {
       layer: "Integration",
       stack: "LMS, CRM, ERP-ready",
       icon: <Link className="h-6 w-6" />,
-      color: "from-brand-blue to-brand-cyan"
+      color: "from-indigo-500 to-purple-400"
     }
   ];
 
@@ -98,7 +98,7 @@ const TechStackSection = () => {
             <div className="text-gray-300">Uptime Guarantee</div>
           </div>
           <div className="text-white">
-            <div className="text-3xl font-bold font-montserrat mb-2">&lt; 200ms</div>
+            <div className="text-3xl font-bold font-montserrat mb-2">< 200ms</div>
             <div className="text-gray-300">Average Response Time</div>
           </div>
           <div className="text-white">
@@ -109,7 +109,7 @@ const TechStackSection = () => {
 
         {/* CTA */}
         <div className="text-center mt-16">
-          <button className="bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-brand-blue hover:to-brand-cyan text-white px-8 py-3 rounded-full font-montserrat font-medium hover-scale transition-all duration-300">
+          <button className="bg-gradient-to-r from-brand-orange to-brand-cyan text-white px-8 py-3 rounded-full font-montserrat font-medium hover-scale">
             Partner With Gurukul Code
           </button>
         </div>

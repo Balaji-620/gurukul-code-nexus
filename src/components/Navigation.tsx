@@ -12,14 +12,14 @@ const Navigation = () => {
       title: 'Platform',
       href: '#platform',
       dropdown: [
-        { title: 'Career Development', href: '/career-development' },
-        { title: 'FinCode', href: '/fincode' },
-        { title: "Let's Advance", href: '/lets-advance' },
+        { title: 'Career Development', href: '#career' },
+        { title: 'FinCode', href: '#fincode' },
+        { title: "Let's Advance", href: '#advance' },
+        { title: 'Enterprise', href: '#enterprise' },
       ]
     },
-    { title: 'Pricing', href: '/pricing' },
-    { title: 'Enterprise Solutions', href: '/enterprise' },
-    { title: 'About', href: '/about' },
+    { title: 'About', href: '#about' },
+    { title: 'Contact', href: '#contact' },
   ];
 
   return (
@@ -28,13 +28,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/">
-              <img 
-                src="/lovable-uploads/3faf6c8f-e8a6-41bb-941b-997db4d2128c.png" 
-                alt="Gurukul Code" 
-                className="h-10 w-auto"
-              />
-            </a>
+            <img 
+              src="/lovable-uploads/3faf6c8f-e8a6-41bb-941b-997db4d2128c.png" 
+              alt="Gurukul Code" 
+              className="h-10 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
@@ -84,10 +82,10 @@ const Navigation = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" className="font-montserrat border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white">
+            <Button variant="outline" className="font-montserrat">
               Sign In
             </Button>
-            <Button className="bg-brand-blue hover:bg-brand-cyan font-montserrat text-white">
+            <Button className="bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-brand-blue hover:to-brand-cyan font-montserrat">
               Start My Journey
             </Button>
           </div>
@@ -132,10 +130,10 @@ const Navigation = () => {
               ))}
               <div className="pt-4 pb-3 border-t border-gray-200">
                 <div className="space-y-3 px-3">
-                  <Button variant="outline" className="w-full font-montserrat border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white">
+                  <Button variant="outline" className="w-full font-montserrat">
                     Sign In
                   </Button>
-                  <Button className="w-full bg-brand-blue hover:bg-brand-cyan font-montserrat text-white">
+                  <Button className="w-full bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-brand-blue hover:to-brand-cyan font-montserrat">
                     Start My Journey
                   </Button>
                 </div>
