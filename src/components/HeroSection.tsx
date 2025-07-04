@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, Play, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
@@ -9,7 +9,7 @@ const HeroSection = () => {
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-brand-cyan/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-orange/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-blue/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-blue/5 rounded-full blur-3xl"></div>
       </div>
 
@@ -58,10 +58,10 @@ const HeroSection = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-in delay-600">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in delay-600">
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-brand-orange to-brand-cyan hover:from-brand-cyan hover:to-brand-orange text-white font-montserrat font-semibold px-8 py-4 text-lg transition-all duration-300 hover-scale"
+              className="bg-brand-blue hover:bg-brand-cyan text-white font-montserrat font-semibold px-8 py-4 text-lg transition-all duration-300 hover-scale"
             >
               Start My Journey
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -71,24 +71,8 @@ const HeroSection = () => {
               variant="outline" 
               className="border-white/30 text-white hover:bg-white/10 font-montserrat font-semibold px-8 py-4 text-lg backdrop-blur-sm"
             >
-              <Play className="mr-2 h-5 w-5" />
-              Watch Demo
+              Explore Platform
             </Button>
-          </div>
-
-          {/* Demo Video Placeholder */}
-          <div className="animate-fade-in delay-800">
-            <div className="relative max-w-4xl mx-auto">
-              <div className="aspect-video bg-black/20 backdrop-blur-sm border border-white/20 rounded-2xl flex items-center justify-center hover-scale cursor-pointer group">
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-4 mx-auto group-hover:bg-white/30 transition-colors">
-                    <Play className="h-10 w-10 text-white ml-1" />
-                  </div>
-                  <p className="text-white font-medium">Experience the Future of Career Intelligence</p>
-                  <p className="text-gray-400 text-sm mt-2">90-second platform walkthrough</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
