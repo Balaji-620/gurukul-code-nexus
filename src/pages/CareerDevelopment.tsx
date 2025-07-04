@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { 
   Brain, Bot, BookOpen, Briefcase, Award, Users, Heart, 
   ArrowRight, CheckCircle, Star, Target, Zap, Shield,
-  TrendingUp, MessageCircle, Portfolio, Lightbulb
+  TrendingUp, MessageCircle, Lightbulb
 } from 'lucide-react';
 
 const CareerDevelopment = () => {
